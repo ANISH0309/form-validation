@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<title>Registration Form</title>
+	</head>
+	<body onload="document.regForm.name.focus()" ;>
+		<div class="container">
+			<h1>Registration Form</h1>
+			<form
+				class="form"
+				id="myForm"
+				name="regForm"
+				onSubmit="return formValidation()"
+				;
+			>
+				<div class="user-box">
+					<input name="name" id="name" type="text" required />
+					<label for="name">Name</label>
+				</div>
+
+				<div class="user-box">
+					<input id="regNo" type="text" required /><label for="regno"
+						>Registration Number</label
+					>
+				</div>
+
+				<div class="user-box">
+					<input id="dob" type="date" required />
+					<label class="dob" for="dob">DOB</label>
+				</div>
+
+				<div class="user-box">
+					<input id="program" type="text" required /><label for="program"
+						>Program</label
+					>
+				</div>
+
+				<div class="user-box">
+					<input id="email" type="email" required /><label for="email"
+						>Email</label
+					>
+				</div>
+
+				<div class="user-box">
+					<input id="phone" type="tel" required /><label for="phone"
+						>Phone Number</label
+					>
+				</div>
+
+				<a
+					><span></span>
+					<span></span>
+					<span></span>
+					<span></span><input type="submit" value="Submit"
+				/></a>
+			</form>
+		</div>
+	</body>
+</html>
