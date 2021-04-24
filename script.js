@@ -60,7 +60,7 @@ function nameValidation(name) {
 	if (name.match(nameCheck)) {
 		return true;
 	} else {
-		alert("Student Name must have alphabet characters only");
+		alert("Student Name must have alphabetical characters only");
 		uname.focus();
 		return false;
 	}
